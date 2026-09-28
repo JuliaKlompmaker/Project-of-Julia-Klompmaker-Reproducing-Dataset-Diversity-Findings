@@ -1,3 +1,44 @@
+### Date: [29/09 2026]
+
+#### Who did you help this week?
+
+-
+
+#### What helped you this week?
+
+Theos readme on how to run his experiments as well as documentation from pytorch as to how to run it on mac.
+
+#### What did you achieve?
+
+* Cloning theos repo + downloading Morph-data
+* Making research project repo
+* Downloading Harward-GF data
+* Doing som initial dataset runs of GF data
+
+#### What did you struggle with?
+
+* Getting Theos model up and running on my computer, without actually downloading the heavy padchest data
+
+#### What would you like to work on next week?
+
+* Further look into Harward-GF data
+* Maybe fit data to theos model
+
+#### Where do you need help from Veronika?
+
+* Using the built in splits from the Harward-GF dataset, or not? There is a train, validate, test split as of now. 
+* 2d and 3d images(we discussed this last time, but i forgot what conclusion we came to)
+* How should i add Theos repo to mine. Fork it?
+
+#### Any other topics
+
+This space is yours to add to as needed.
+
+
+### Acknolodgement
+The material in Dr. Mystery's Lab Guide is partially derived from "Whitaker Lab Project Management" by Dr. Kirstie Whitaker and the Whitaker Lab team, used under CC BY 4.0. Dr. Mystery's Lab Guide is licensed under CC BY 4.0 by Julia Klompmaker.
+
+
 ### Date: [Template]
 
 #### Who did you help this week?
