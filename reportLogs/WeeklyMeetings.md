@@ -1,3 +1,48 @@
+### Date: [06/10 2026]
+
+#### Who did you help this week?
+
+-
+
+#### What helped you this week?
+
+Theos code on how to preprocess data. Potentially can lean on Padchest preprocessing for Harward-GF data. 
+
+#### What did you achieve?
+
+* Looking at comparison metrics and deciding on which can be used and which cannot
+  * image metrics IS/FID/Vendi×3 and metadata diversity can be used
+  * RougeL and semantic diversity cannot be used since there's no text modality
+* Took a further look into the data of the Harward-GF and how it should be preprocessed
+* Made rough draft of HarvardGFDataset, modeled closely on PadchestDataset, matching the __getitem__ contract the metric functions expect (image shape, metadata vector format)
+* Also made a rough draft of process_harvardgf() preprocessing step mirroring process_padchest(), so metadata gets extracted from the raw .npz files once and cached to csv, rather than reloaded every run
+
+
+#### What did you struggle with?
+
+* Havent ran the code on HPC (mostly because of time limitations)
+
+#### What would you like to work on next week?
+
+* Finish drafts of HarvardGFDataset and process_harvardgf()
+* Test HarvardGFDataset
+* Get GPU confirmed and benchmarked on the HPC
+
+#### Where do you need help from Veronika?
+
+* Race encoding for the metadata vector: ordinal (0/1/2) vs. true one-hot
+* Given the original paper found most of the metrics (IS, Vendi pixel/HOG, metadata diversity) didn't correlate well with AUC even in their own data, what is the goal in running them on Harvard-GF anyway? Confirming the same null result, or hoping something different shows up here?
+
+#### Any other topics
+
+This space is yours to add to as needed.
+
+
+### Acknolodgement
+The material in Dr. Mystery's Lab Guide is partially derived from "Whitaker Lab Project Management" by Dr. Kirstie Whitaker and the Whitaker Lab team, used under CC BY 4.0. Dr. Mystery's Lab Guide is licensed under CC BY 4.0 by Julia Klompmaker.
+
+
+
 ### Date: [29/09 2026]
 
 #### Who did you help this week?
