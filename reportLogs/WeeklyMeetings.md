@@ -1,3 +1,46 @@
+### Date: [20/10 2026]
+
+#### Who did you help this week?
+-
+
+
+#### What helped you this week?
+
+Meeting with Veronika helped clarify that unusual values should not automatically  be discarded simply because they lie out of the normality.
+
+#### What did you achieve?
+
+* Investigated the distribution of RNFLT values across 1000 randomly sampled images
+* Histrogram analysis on number of pixels at specific RNFLT values in the sample
+* Identified that -1 and -2 are some kind of structured data and not random noise
+* Identified that all positive RNFLT values lie on a quantization grid with spacing of about 1.95503
+* Investigated different images at different pixel value ranges.
+* Investigated some of the highest valued RNFLT images and saw that they retained the charachteristics.
+* Looked further into the code of the original Harward-GF project (found they scale using a fixed 350, and clip RNFLT values to the range (-2,350) before training)
+
+#### What did you struggle with?
+
+* Determining the exact meaning of the values -2,-1 and 0 because they are not fully documented in the paper
+* Understanding wether the RNFLT images had undergone preprocessing or not
+* Deciding on an appropriate normalization strategy
+* Using the hpc... but i am getting there
+
+#### What would you like to work on next week?
+
+* Finalise the RNFLT preprocessing and normalisation strategy
+
+#### Where do you need help from Veronika?
+
+* How to treat -1 and -2 (and potentially 0)
+* Feedback on normalisation methods
+
+
+#### Any other topics
+
+-
+
+
+
 ### Date: [06/10 2026]
 
 #### Who did you help this week?
@@ -6,7 +49,7 @@
 
 #### What helped you this week?
 
-Theos code on how to preprocess data. Potentially can lean on Padchest preprocessing for Harward-GF data. 
+Theos code on how to preprocess data. Potentially can lean on Padchest preprocessing for Harward-GF data.
 
 #### What did you achieve?
 
@@ -71,7 +114,7 @@ Theos readme on how to run his experiments as well as documentation from pytorch
 
 #### Where do you need help from Veronika?
 
-* Using the built in splits from the Harward-GF dataset, or not? There is a train, validate, test split as of now. 
+* Using the built in splits from the Harward-GF dataset, or not? There is a train, validate, test split as of now.
 * 2d and 3d images(we discussed this last time, but i forgot what conclusion we came to)
 * How should i add Theos repo to mine. Fork it?
 
