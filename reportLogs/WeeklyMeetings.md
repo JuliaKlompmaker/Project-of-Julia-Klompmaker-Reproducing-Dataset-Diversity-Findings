@@ -1,3 +1,43 @@
+### Date: [2/11 2026]
+
+#### Who did you help this week?
+
+Emailed harvardophai@gmail.com, harvardairobotics@gmail.com and they replyed
+
+
+#### What helped you this week?
+
+Running separate normalization experiments in a notebook made it easier to isolate the effect of preprocessing choices before integrating them into the full metric pipeline. And using the HPC guide to actually run it successfully.
+
+#### What did you achieve?
+
+* Integrated the Harvard-GF dataset into the diversity evaluation pipeline.
+* Created preprocessing and dataset-loading code for Harvard-GF
+* Implemented different normalization strategies: raw, fixed, clip350, disc_zero, minmax
+* Looked at the different normalisation strategies across the different metrics and demographics using notebook
+* Successfully ran the Harvard-GF diversity pipeline on the HPC and generated diversity metrics for: All, Female, Male, Asian, Black, White using the fixed normalisation
+
+
+#### What did you struggle with?
+
+* Deciding which normalization best matches the intended use of Theos framework.
+* Understanding the original Harvard-GF preprocessing
+* Determining whether using a different normalization could affect comparison with Theos published results.
+
+#### What would you like to work on next week?
+
+* Compare the remaining metrics (particularly FID and Inception-based metrics) across normalization strategies.
+* Decide on a final preprocessing pipeline for Harvard-GF.
+* Investigate whether the normalization should mimic the original Harvard-GF training pipeline or prioritize consistency with Theo's experimental setup.
+* Begin comparing Harvard-GF results directly with the patterns observed in Theo's study.
+
+#### Where do you need help from Veronika?
+
+* Which normalization strategy would be most appropriate for comparing Harvard-GF against Theo's framework?
+* Is it more important to preserve the original RNFLT values or to reproduce the preprocessing used in the original Harvard-GF project?
+* Are the normalization robustness experiments sufficient evidence that the choice is unlikely to affect the overall conclusions?
+
+
 ### Date: [20/10 2026]
 
 #### Who did you help this week?
