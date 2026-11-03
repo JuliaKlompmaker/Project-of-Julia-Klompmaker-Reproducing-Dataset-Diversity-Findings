@@ -2,8 +2,7 @@
 
 #### Who did you help this week?
 
-Emailed harvardophai@gmail.com, harvardairobotics@gmail.com and they replyed
-
+-
 
 #### What helped you this week?
 
@@ -11,10 +10,11 @@ Running separate normalization experiments in a notebook made it easier to isola
 
 #### What did you achieve?
 
+* Emailed the Harvard-GF authors and got a reply: -2 is the optic disc and -1 the optic rim (region labels, not thickness). They did not answer about 0, the units or normalisation
 * Integrated the Harvard-GF dataset into the diversity evaluation pipeline.
 * Created preprocessing and dataset-loading code for Harvard-GF
 * Implemented different normalization strategies: raw, fixed, clip350, disc_zero, minmax
-* Looked at the different normalisation strategies across the different metrics and demographics using notebook
+* Looked at the different normalisation strategies across the som of the metrics and demographics using notebook
 * Successfully ran the Harvard-GF diversity pipeline on the HPC and generated diversity metrics for: All, Female, Male, Asian, Black, White using the fixed normalisation
 
 
@@ -22,20 +22,24 @@ Running separate normalization experiments in a notebook made it easier to isola
 
 * Deciding which normalization best matches the intended use of Theos framework.
 * Understanding the original Harvard-GF preprocessing
+* My first Harvard-GF job failed because the HPC checkout was on the wrong branch. A full MorphoMNIST scenario takes about 5 hours, so I could only run one.
 * Determining whether using a different normalization could affect comparison with Theos published results.
+
 
 #### What would you like to work on next week?
 
-* Compare the remaining metrics (particularly FID and Inception-based metrics) across normalization strategies.
+* Compare the remaining metrics ( FID and Inception-based metrics) across normalization strategies.
 * Decide on a final preprocessing pipeline for Harvard-GF.
-* Investigate whether the normalization should mimic the original Harvard-GF training pipeline or prioritize consistency with Theo's experimental setup.
 * Begin comparing Harvard-GF results directly with the patterns observed in Theo's study.
 
 #### Where do you need help from Veronika?
 
-* Which normalization strategy would be most appropriate for comparing Harvard-GF against Theo's framework?
-* Is it more important to preserve the original RNFLT values or to reproduce the preprocessing used in the original Harvard-GF project?
-* Are the normalization robustness experiments sufficient evidence that the choice is unlikely to affect the overall conclusions?
+* Is fixed normalization + robustness checks a reasonable strategy?
+* Do i need to validate FID/Inception too, or is the Vendi analysis enough?
+* Should i keep the current encoding used in Harvard-GF, switch to one-hot encoding, or compare both approaches?
+* Is it the right time to move on to classifier training/AUC experiments, or should I finish investigating the preprocessing and normalization choices first?
+* At what point would you recommend I start writing? Should I begin drafting sections such as the dataset description, preprocessing decisions, and methodology now, or wait until more of the experiments are complete?
+
 
 
 ### Date: [20/10 2026]
