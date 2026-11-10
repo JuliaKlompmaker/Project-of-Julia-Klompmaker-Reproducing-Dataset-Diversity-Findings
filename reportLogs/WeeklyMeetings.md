@@ -1,3 +1,53 @@
+### Date: [10/11 2026]
+
+#### Who did you help this week?
+
+-
+
+#### What helped you this week?
+
+* The Purrlab writing guide for the project report.
+* Reusing the PadChest training and prediction pipeline from the original implementation made it much easier to set up the Harvard-GF classification experiments.
+
+#### What did you achieve?
+
+* Continued writing the paper draft, including the methodology, preprocessing, diversity metrics and parts of the results section based on notes made throughout
+* Adapted the original training and prediction scripts to support Harvard-GF.
+* Set up and tested a ResNet-50 training pipeline for Harvard-GF using 5-fold cross-validation and early stopping. (epoch 100, patience 5)
+* Trained models for all six Harvard-GF scenarios: All, Female, Male, Asian, Black and White.
+* Generated downstream classification performance results (AUC) for all scenarios.
+* Obtained the following mean AUCs: All: 0.800, Female: 0.779, Male: 0.800, Asian: 0.746,White: 0.773, Black: 0.774
+
+
+
+#### What did you struggle with?
+
+* Debugging HPC jobs and ensuring code changes were available on the correct branch and environment.
+* Adapting code that was originally written for PadChest to work correctly with Harvard-GF.
+* Debugging the prediction script and verifying that all scenario results were written correctly to the final AUC file.
+* Deciding how much time to spend investigating alternative preprocessing choices compared to moving forward with the performance experiments.
+
+#### What would you like to work on next week?
+
+* Merge the diversity metric results with the AUC results and analyse their relationship using the same methodology as the original paper.
+* Compare Harvard-GF scenario rankings induced by diversity metrics and classification performance
+* Generate figures and tables for the results section
+* Finish the "Metric ranking versus classification performance" subsection
+* Continue improving the discussion and interpretation of the results
+
+#### Where do you need help from Veronika?
+
+* How should I compare the diversity metric results and the AUC results? Is ranking-based analysis (e.g. Spearman correlation, as used in the original paper) sufficient, or would you recommend additional analyses?
+* How much emphasis should I place on the normalisation experiments in the final report, given that the main project goal is reproducing the findings on a new dataset?
+* We discussed using race instead of scanner. How should I discuss this difference when interpreting the results and comparing them to the original study?
+
+
+#### Any other topics
+
+-
+
+
+
 ### Date: [3/11 2026]
 
 #### Who did you help this week?
@@ -21,7 +71,7 @@ Running separate normalization experiments in a notebook made it easier to isola
 #### What did you struggle with?
 
 * Deciding which normalization best matches the intended use of Theos framework.
-* Understanding the original Harvard-GF preprocessing
+* Understanding the original Harvard-GF preprocessing ->
 * My first Harvard-GF job failed because the HPC checkout was on the wrong branch. A full MorphoMNIST scenario takes about 5 hours, so I could only run one.
 * Determining whether using a different normalization could affect comparison with Theos published results.
 
