@@ -17,7 +17,8 @@
 * Trained models for all six Harvard-GF scenarios: All, Female, Male, Asian, Black and White.
 * Generated downstream classification performance results (AUC) for all scenarios.
 * Obtained the following mean AUCs: All: 0.800, Female: 0.779, Male: 0.800, Asian: 0.746,White: 0.773, Black: 0.774
-
+* Merged the diversity metric results with the downstream performance results and reproduced the ranking-based analysis from the original paper.
+* Computed Spearman rank correlations between diversity metrics and downstream classification performance.
 
 
 #### What did you struggle with?
@@ -37,7 +38,7 @@
 
 #### Where do you need help from Veronika?
 
-* How should I compare the diversity metric results and the AUC results? Is ranking-based analysis (e.g. Spearman correlation, as used in the original paper) sufficient, or would you recommend additional analyses?
+* My preliminary results suggest that Vendi-based metrics correlate more strongly with AUC than FID, whereas the original paper reported stronger agreement for FID. How should I frame and interpret this difference?
 * How much emphasis should I place on the normalisation experiments in the final report, given that the main project goal is reproducing the findings on a new dataset?
 * We discussed using race instead of scanner. How should I discuss this difference when interpreting the results and comparing them to the original study?
 
