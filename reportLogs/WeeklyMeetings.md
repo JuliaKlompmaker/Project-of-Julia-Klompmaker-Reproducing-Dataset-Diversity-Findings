@@ -1,5 +1,35 @@
-### Date: [10/11 2026]
+### Date: [17/11 2026]
 
+#### Who did you help this week?
+-
+
+
+#### What helped you this week?
+* Comparing my implementation and analysis pipeline directly to theos code and report
+
+#### What did you achieve?
+
+* Made the correlation heatmap
+* Included the correlation heatmap in the report
+* Wrote some part of result/experiment section in report
+
+#### What did you struggle with?
+
+* Looking at my results from the heatmap vs Theos
+
+#### What would you like to work on next week?
+
+* More report work. Begin discussion section
+
+#### Where do you need help from Veronika?
+
+* The original paper suggests FID is among the strongest predictors of downstream performance, whereas my Harvard-GF results suggest Vendi Pixel is the strongest predictor. How should i interpret and present that difference?
+
+
+
+
+
+### Date: [10/11 2026]
 #### Who did you help this week?
 
 -
