@@ -35,6 +35,7 @@
 * As of now i am not doing any short cut analysis is that okay? (Also the datamap analysis)
 * Should i make a future work section?
 * Discussion right now also includes discussing the difference between using different scanners vs different races. Should i view as a limitation just or discuss it further?
+* Still in doubt about what to do with repository/repositories?
 
 
 #### Any other topics
