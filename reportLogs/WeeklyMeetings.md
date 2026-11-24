@@ -1,3 +1,46 @@
+### Date: [24/11 2026]
+
+#### Who did you help this week?
+
+-
+
+#### What helped you this week?
+
+* Discussion with Veronika about the interpretation of the diversity metrics and the possible reasons why the Harvard-GF results differ from the PadChest results.
+* Comparing the Harvard-GF results directly to the original paper and implementation helped clarify which findings appear to generalize and which do not.
+
+#### What did you achieve?
+
+* Continued writing the report and expanded the Discussion section.
+* Reworked the Results section to better distinguish observations from interpretation.
+* Finalised the ranking-based analysis comparing diversity metrics and downstream AUC.
+* Investigated possible explanations for the difference between the Harvard-GF and PadChest results.
+* Incorporated discussion points regarding ImageNet-based feature extractors, Vendi metrics and retinal imaging.
+
+#### What did you struggle with?
+
+* Interpreting differences between my results and those reported by theo
+* Deciding how strongly I can interpret the observed differences given that the ranking analysis is based on six scenarios.
+* Distinguishing which explanations belong in Results and which belong in Discussion
+
+#### What would you like to work on next week?
+
+* Finish the discussion section
+* Write the conclusion, related work (maybe intro) section
+* Remove remaining TODOs and clean up the document structure
+
+
+#### Where do you need help from Veronika?
+
+* As of now i am not doing any short cut analysis is that okay? (Also the datamap analysis)
+* Should i make a future work section?
+* Discussion right now also includes discussing the difference between using different scanners vs different races. Should i view as a limitation just or discuss it further?
+
+
+#### Any other topics
+
+-
+
 ### Date: [17/11 2026]
 
 #### Who did you help this week?
